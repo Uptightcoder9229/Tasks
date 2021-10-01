@@ -1,0 +1,30 @@
+
+a:hover{
+    color: #9b9b9b !important;
+}
+
+a:visited{
+    color: #848484 !important;
+}
+
+a:active{
+    color: #1c1c1c !important;
+}
+
+a{
+    color: #1c1c1c;
+}
+.modal-header{
+    position: relative;
+}
+.btn-close{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.modal-body{
+    height:300px;
+    width: auto;
+    overflow: auto;
+}

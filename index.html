@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class = "navbar navbar-expand-md">
+        <div class="container">
+            <a href="" class="navbar-brand"><img src="./images/banner.png" height="45" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-dark">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-dark">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="btn btn-dark rounded-pill px-4">Sign Up for Free</a>
+                    </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    <div class="container ">
+        <div class="row justify-content-center ">
+            <div class="col-lg-7 border border-light rounded">
+                <div class="login m-1 border-light">
+                    <form action="" class="register-form p-5 ">
+                    <h1 class="fw-bolder fs-1">Create A New Account</h1>
+                    <!-- <h1 class=" fs-5">2 Incorrect attempts <span class="badge bg-danger rounded-pill">1 Left</span></h1> -->
+                    <p class="small mx-4 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio veritatis temporibus eveniet mollitia quibusdam.</p>
+                    
+                    <div class="form-floating mx-4 my-2">
+                    <input type="name" class="form-control form-control-lg" id="floatingName" placeholder="Your Username" required>
+                    <label for="floatingName">Name</label>
+<!--                     <span class="help-block " for="floatingName">Enter Name Here</span>
+ -->                    </div>
+                   
+                    <div class="form-floating mx-4 my-2">
+                        <input type="password" class="form-control form-control-lg" id="floatingUserName" placeholder="Your Username" required>
+                        <label for="floatingUserName">Email</label>
+                        </div>
+
+                    <div class="form-floating mx-4 my-2">
+                        <input type="password" class="form-control form-control-lg" id="floatingUserName" placeholder="Your Username" required>
+                        <label for="floatingUserName">Password</label>
+                        </div>
+                                           
+                    <div class="form-floating   mx-4 my-2">
+                        <input type="password" class="form-control form-control-lg" id="floatingUserName" placeholder="Your Username" required>
+                        <label for="floatingUserName"></label>
+                    <label for="floatingUserName">Confirm Password</label>
+                    </div>
+                    <div class = "mx-4 my-2 d-flex justify-content-around">
+                        <div class="input-group ">
+                            <select class="custom-select" id="inputGroupSelect04">
+                            <option selected>Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Private</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group ml-2" >
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="">Date of Birth</span>
+                            </div>
+                            <input type="number" min = "1" max = "31" class="form-control" id = "Date" placeholder="dd" >
+                            <input type="number" min = "1" max = "12" class="form-control" id = "Month" placeholder="mm" >
+                
+                          </div>
+                        
+                    </div>
+                    <div>
+                        <div class="form-check mx-4 my-2">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I agree to the 
+                                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href ="#" class = "terms">Terms and Conditions</a>
+                             </label>
+                          </div>
+                    </div>
+                    <div class="d-flex mx-4  ">
+                        <button type="submit" class="btn btn-dark mt-2 rounded-pill px-4">Register</button>
+                        <button type="submit" class="btn btn-dark mt-2 mx-2 rounded-pill px-4">Cancel</button>
+                    </div>
+                </div>
+                        
+                </form>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+    <div class="modal " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="model-title ">Terms and Conditions</h2>
+                <button type="button" class="btn-close mt-1" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="true">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="condition-tab" data-toggle="tab" href="#condition" role="tab" aria-controls="condition" aria-selected="false">Conditions</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea alias pariatur nisi delectus consequuntur quidem laborum, 
+                        ipsa voluptatum molestias labore. Odio, voluptate sapiente, repudiandae, 
+                        dolore quo quod cumque asperiores eveniet non veniam harum officiis. 
+                        Expedita nesciunt quia culpa consectetur in doloremque repellendus vero natus at,
+                         quas a magnam asperiores eius aut enim ipsum atque molestias modi labore illo,
+                          aliquam ea inventore nihil debitis. Iusto doloribus quae odit molestiae quam commodi 
+                          inventore tempora! Minima rem suscipit nihil? Exercitationem deleniti molestias id pariatur ipsa,
+                           aut dicta ipsam. Eius saepe ipsum odio repudiandae. Dolorem, voluptate. Iste reiciendis quaerat 
+                           animi, inventore voluptatum doloribus consequuntur praesentium accusantium atque necessitatibus 
+                           rem sequi molestias sapiente sunt illo cum beatae aliquid voluptatem impedit rerum commodi 
+                           tenetur? Ipsam exercitationem voluptate veniam unde! Voluptatem voluptatibus obcaecati fuga
+                            quidem corrupti rem nesciunt minima neque, quo minus atque ipsam est eaque! Architecto harum 
+                            consectetur ipsa a? Sequi distinctio minus quaerat aperiam tempore dolore dicta repellendus
+                             cupiditate a esse aspernatur, in quod. Distinctio laudantium aut beatae non, quisquam nihil
+                              aliquam voluptatem iusto minus suscipit natus asperiores soluta repudiandae nobis ex
+                               veritatis quasi, modi, tenetur ducimus! Vero non repellendus quae aliquid reiciendis
+                                deserunt fuga asperiores ea placeat nisi perferendis reprehenderit, laboriosam harum
+                                 excepturi, corrupti ipsa eligendi, tempora possimus iste mollitia ut! Harum veritatis
+                                  eum quos possimus id eligendi porro laudantium illum esse aspernatur, ab aperiam
+                                   inventore iusto culpa aliquam sed eius. Quasi, laborum officia excepturi beatae
+                                    ipsa, suscipit libero possimus at, dicta eum facilis exercitationem distinctio
+                                     totam dolorum quis nulla neque repellendus fugit sint quod quas cupiditate alias. 
+                                     Illo obcaecati iusto, nostrum sint, facilis voluptas deserunt ullam ut ipsa nam
+                                      placeat impedit consequatur cupiditate exercitationem voluptatibus. Corporis quasi 
+                                      numquam illum velit labore reprehenderit beatae ducimus doloremque delectus rem vitae
+                                       unde, eligendi quis a ipsum, architecto aliquid sed officiis impedit soluta ut. 
+                                       Incidunt ad sint quae placeat corporis ut aspernatur. Officiis aliquam quasi deleniti omnis non nemo sunt atque similique quis beatae voluptatem minus, id commodi quibusdam cumque incidunt recusandae neque ullam nostrum ex illum qui? Est, id eos?
+                                        Quo ex adipisci aliquam iusto quam sed deserunt illum dignissimos at quia officiis eligendi repellat, veniam enim itaque deleniti rerum id iure voluptatibus. Vel, veniam alias suscipit voluptatem distinctio esse rerum iure in. Magni ea nesciunt voluptatibus ratione provident numquam id facere reiciendis eos. Quia nobis maxime accusamus vero. Eaque dicta quam, unde expedita eius deleniti accusamus beatae libero veritatis commodi saepe debitis error reprehenderit et!
+                    </div>
+                    <div class="tab-pane fade" id="condition" role="tabpanel" aria-labelledby="condition-tab">test-1</div>
+                    
+                  </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/src/tab.js"></script>
+
+
+</body>
+</html>
